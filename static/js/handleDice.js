@@ -6,7 +6,7 @@ const p1 = {
 }
 
 const p2 ={
-    ame:"player 2",
+    name:"player 2",
     score:0,
 }
 
@@ -30,10 +30,18 @@ const initializingScore = (player) => {
     player.score = 0;
 };
 
-//test IIFE by console
-(()=>{
-    rollingDice(p1);
-    rollingDice(p2);
+export default{
+    p1,
+    p2,
+    rollingDice,
+    savingDice,
+    initializingScore
+}
+
+// //test IIFE by console
+// (()=>{
+//     rollingDice(p1);
+//     rollingDice(p2);
     
-    console.log(p1, p2);
-})();
+//     console.log(p1, p2);
+// })();
