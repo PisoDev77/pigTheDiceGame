@@ -69,6 +69,12 @@ main {
   order: 1;
 }
 
+.btn-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
 .new-btn,
 .save-btn,
 .roll-btn {
