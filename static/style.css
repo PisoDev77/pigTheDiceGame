@@ -27,6 +27,7 @@ main {
   -webkit-box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
 }
 
 .player1,
@@ -100,6 +101,6 @@ main {
   width: 105px;
   left: 50%;
   transform: translateX(-50%);
-  top: 250px;
+  top: 150px;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.2);
 }
