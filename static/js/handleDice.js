@@ -1,12 +1,12 @@
 // class나 prototype이 좋으나, 시간관계상 p1 p2
 
 const p1 = {
-    name:"player 1",
+    name:"player1",
     score: 0,
 }
 
 const p2 ={
-    name:"player 2",
+    name:"player2",
     score:0,
 }
 
@@ -20,6 +20,7 @@ const rollingDice = (player) => {
         savingDice(player, rand);
     }
     
+    return rand;
 };
 
 const savingDice = (player, score) => {
