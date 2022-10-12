@@ -11,12 +11,21 @@ import handleDice from "./handleDice.js";
         
         if(btn.contains("roll-btn")){
             const rand = handleDice.rollingDice(current_player);
-            const ele = document.querySelector(`.${current_player.name}`).querySelector(".current-score");
-            ele.innerText = rand;
+            const curr = document.querySelector(`.${current_player.name}`).querySelector(".current-score");
+            const saved = document.querySelector(`.${current_player.name}`).querySelector(".saved-score");
+            
+            curr.innerText = rand;
+            saved.innerText = current_player.score;
 
             if(current_player.score === 0 ){
-                current_player = handleDice.p2;
+                current_player = 
+                current_player === handleDice.p1 ?
+                handleDice.p2
+                :
+                handleDice.p1
+                ;
             }
+          
         }
 
         if(btn.contains("save-btn")){
