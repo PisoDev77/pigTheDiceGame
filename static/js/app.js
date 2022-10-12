@@ -29,7 +29,12 @@ import handleDice from "./handleDice.js";
         }
 
         if(btn.contains("save-btn")){
-            console.log("THIS IS SAVE");
+            current_player = 
+                current_player === handleDice.p1 ?
+                handleDice.p2
+                :
+                handleDice.p1
+                ;
         }
 
         if(btn.contains("new-btn")){
