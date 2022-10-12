@@ -20,6 +20,7 @@ const rollingDice = (player) => {
         savingDice(player, rand);
     }
     
+    return rand;
 };
 
 const savingDice = (player, score) => {
