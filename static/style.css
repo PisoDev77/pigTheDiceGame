@@ -87,7 +87,7 @@ main {
 .rolled-dice {
   display: block;
   position: absolute;
-  width: 100px;
+  width: 105px;
   left: 50%;
   transform: translateX(-50%);
   top: 250px;
