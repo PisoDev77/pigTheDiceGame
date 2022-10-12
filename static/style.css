@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: insert(50%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 970px;
+  height: 510px;
+  border-radius: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+
+.player1,
+.player2 {
+  margin-top: 100px;
+  display: block;
+  align-items: center;
+  width: 320px;
+  height: 220px;
+  text-align: center;
+}
+
+.player-name {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.saved-score {
+  font-size: 80px;
+  font-weight: 100;
+  color: red;
+  margin-bottom: 50px;
+}
+
+.current-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 0, 0, 0.8);
+  font-size: 40px;
+  color: white;
+  width: 120px;
+  height: 80px;
+  margin: 0 auto;
+}
+.player1 {
+  order: -1;
+}
+.player2 {
+  order: 1;
+}
+
+.new-btn,
+.save-btn,
+.roll-btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.new-btn i,
+.save-btn i,
+.roll-btn i {
+  font-size: 30px;
+  color: red;
+  margin-right: 20px;
+}
+
+.new-btn {
+  margin-top: 50px;
+  margin-bottom: 210px;
+}
+.roll-btn {
+  margin-bottom: 10px;
+}
