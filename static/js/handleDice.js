@@ -30,10 +30,3 @@ const initializingScore = (player) => {
     player.score = 0;
 };
 
-//test IIFE by console
-(()=>{
-    rollingDice(p1);
-    rollingDice(p2);
-    
-    console.log(p1, p2);
-})();
